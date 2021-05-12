@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn import tree
 from sklearn.metrics import accuracy_score
 
-def MarvellousDecision():
+def MLDecision():
     dataset=load_iris()
     
     data=dataset.data
@@ -21,7 +21,7 @@ def MarvellousDecision():
     return Accuracy
 
 def main():
-    ret=MarvellousDecision()
+    ret=MLDecision()
     print("Accuracy of decision tree algorithm is: ",ret*100,"%")
 
 if __name__=="__main__":
