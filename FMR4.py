@@ -22,18 +22,14 @@ def main():
 	print("Your entered data is:",arr)
 
 	#newdata=filter(function_name,Data)
-	newdata=list(filter(lambda no:(no%2==0),arr))        #newdata=MarvellousFilter(arr)
+	newdata=list(filter(lambda no:(no%2==0),arr))        
 	print("After filtering data is:",newdata)
 	
-	newdata1=list(map(lambda no: no+2,newdata))      #newdata1=MarvellousMap(newdata)
+	newdata1=list(map(lambda no: no+2,newdata))      
 	print("After Map data is:",newdata1)
 	
-	result=functools.reduce(lambda no1,no2:no1+no2,newdata1)                #result=MarvellousReduce(newdata1)
+	result=functools.reduce(lambda no1,no2:no1+no2,newdata1)                
 	print("After reduce result is:",result)
-	
-	#All above logic, we can write in a single line
-	#print(functools.reduce(lambda a,b:a+b, list(map(lambda no:no+2,list(filter(lambda no:(no%2==0),arr))))))
-	
 	
 if __name__=="__main__":
 	main()
