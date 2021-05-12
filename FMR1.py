@@ -12,7 +12,7 @@ def CheckEven(no):
 	else:
 		return False
 		
-def MarvellousFilter(arr):
+def NewFilter(arr):
 	brr=[]
 	for i in range(len(arr)):
 		if CheckEven(arr[i])==True:
@@ -20,13 +20,13 @@ def MarvellousFilter(arr):
 		
 	return brr
 
-def MarvellousMap(arr):
+def NewMap(arr):
 	for i in range(len(arr)):
 		arr[i]=arr[i]+2
 		
 	return arr
 
-def MarvellousReduce(arr):
+def NewReduce(arr):
 		sum=0
 		for i in range(len(arr)):
 			sum=sum+arr[i]
@@ -45,13 +45,13 @@ def main():
 	
 	print("Your entered data is:",arr)
 
-	newdata=MarvellousFilter(arr)
+	newdata=NewFilter(arr)
 	print("After filtering data is:",newdata)
 	
-	newdata1=MarvellousMap(newdata)
+	newdata1=NewMap(newdata)
 	print("After Map data is:",newdata1)
 	
-	result=MarvellousReduce(newdata1)
+	result=NewReduce(newdata1)
 	print("After reduce result is:",result)
 	
 	
