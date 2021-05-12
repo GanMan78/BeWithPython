@@ -33,13 +33,13 @@ def main():
 	print("Your entered data is:",arr)
 
 	#newdata=filter(function_name,Data)
-	newdata=list(filter(CheckEven,arr))        #newdata=MarvellousFilter(arr)
+	newdata=list(filter(CheckEven,arr))        
 	print("After filtering data is:",newdata)
 	
-	newdata1=list(map(Increment,newdata))      #newdata1=MarvellousMap(newdata)
+	newdata1=list(map(Increment,newdata))      
 	print("After Map data is:",newdata1)
 	
-	result=functools.reduce(Add,newdata1)                #result=MarvellousReduce(newdata1)
+	result=functools.reduce(Add,newdata1)               
 	print("After reduce result is:",result)
 	
 	
