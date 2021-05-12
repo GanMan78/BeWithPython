@@ -5,7 +5,7 @@ from sklearn import tree
 from sklearn.metrics import accuracy_score
 from sklearn.neighbors import KNeighborsClassifier
 
-def MarvellousDecision():
+def MLDecision():
     dataset=load_iris()
     
     data=dataset.data
@@ -21,7 +21,7 @@ def MarvellousDecision():
     Accuracy=accuracy_score(target_test,output)
     return Accuracy
 
-def MarvellousKNN():
+def MLKNN():
     dataset=load_iris()
     
     data=dataset.data
@@ -38,10 +38,10 @@ def MarvellousKNN():
     return Accuracy
     
 def main():
-    ret=MarvellousDecision()
+    ret=MLDecision()
     print("Accuracy of decision tree algorithm is: ",ret*100,"%")
     
-    ret=MarvellousKNN()
+    ret=MLKNN()
     print("Accuracy of KNN algorithm is: ",ret*100,"%")
 
 if __name__=="__main__":
